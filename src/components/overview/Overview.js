@@ -1,10 +1,4 @@
 import React from "react";
-import eye from "../../assests/eye.png";
-import Group from "../../assests/Group.png";
-import GroupChat from "../../assests/GroupChat.png";
-import Shift from "../../assests/shift.png";
-import Shift2 from "../../assests/shift2.png";
-import Vector from "../../assests/Vector2.png";
 import { OverviewData } from "../../utils/OverviewData";
 
 const Overview = () => {

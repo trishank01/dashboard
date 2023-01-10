@@ -1,4 +1,5 @@
 import React from "react";
+import Activity from "../activity/Activity";
 import Calender from "../calender/Calender";
 import Overview from "../overview/Overview";
 import TopBar from "../topBar/TopBar";
@@ -12,6 +13,7 @@ const Main = () => {
           <Overview/>
           <Calender/>
         </div>
+        <Activity/>
       </div>
     </div>
   );

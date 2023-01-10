@@ -14,8 +14,12 @@ module.exports = {
         'light-pink':'#FCE8EE',
         'grey':'#989BA5',
         'success' : "#0EA80F",
+        'light-success' : "#E7F6E7",
         'failed' : "#E43429",
+        'light-failed' : "#FCE8EE",
         'processing' : "#FF9429",
+        "light-processing" : "#FFF0E0",
+
       },
 
     },
