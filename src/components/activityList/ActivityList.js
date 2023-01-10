@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ActivityData } from "../../utils/ActivityData";
 
-const ActivityList = () => {
+const ActivityList = ({selectValue}) => {
+
+    const [selectedData, setselectedData] = useState([])
+   
+    useEffect(() => {
+     const filteredData = ActivityData.filter((item) => {
+        return item.status === selectValue
+     })
+     if(selectValue === "all"){
+        setselectedData(ActivityData)
+     }else {
+        setselectedData(filteredData)
+     }
+
+    },[ selectValue])
+
   return (
     <div>
       <table className="w-full flex flex-col bg-white p-2 mt-5 rounded-2xl">
@@ -18,11 +33,11 @@ const ActivityList = () => {
           </tr>
         </thead>
         <tbody>
-          {ActivityData.map((data) => {
+          {selectedData.map((data) => {
             return (
               <tr className="flex justify-between border-0 border-b-[1px] border-solid border-grey px-0 py-2">
                 <div>
-                  <td>{data.Activity}</td>
+                  <td className="flex gap-2"> <img className="w-6" src={data.icon} alt=""/>  {data.Activity}</td>
                 </div>
                 <div className="flex justify-between w-[550px]">
                   <td>{data.amount === undefined  ? "No Amount" : data.amount }</td>

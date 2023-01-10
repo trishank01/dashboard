@@ -4,6 +4,8 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { AiFillSchedule, AiFillStar } from "react-icons/ai";
 import { SiGooglesheets } from "react-icons/si";
 import { HiDocumentText } from "react-icons/hi";
+import Logout from "../../assests/Logout.png"
+import Image from "../../assests/Image.png"
 
 const SideBar = () => {
   return (
@@ -20,7 +22,7 @@ const SideBar = () => {
           Scheduling
       </NavLink>
       <NavLink
-        to="/timesheets"
+        to="/timesheet"
         className={`text-white no-underline text-sm leading-7 py-4 pl-4 pr-14  flex gap-3`}
       >
         <SiGooglesheets className="icon-color" size={28} />
@@ -40,6 +42,20 @@ const SideBar = () => {
         <HiDocumentText className="icon-color" size={28} />
         Documents
       </NavLink>
+      <div className="flex relative">
+        <div className="flex absolute top-[150px]  gap-4 items-center">
+        <div className="w-12">
+          <img className="w-full" src={Image} alt="avatar"/>
+        </div>
+        <div className="text-white">
+          <p className="m-0 text-[13px] w-[80px]">Hi, Mellani</p>
+          <p className="m-0 font-semibold mt-2">Admin</p>
+        </div>
+        <div>
+          <img className="bg-white p-2 rounded-xl" src={Logout} alt="Logout"/>
+        </div>
+      </div>
+      </div>
     </div>
   );
 };
