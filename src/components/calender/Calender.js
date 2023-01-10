@@ -30,6 +30,7 @@ const Calender = () => {
         {Daydata.map((data) => {
           return (
             <div
+            key={data.id}
               className={`flex flex-col items-center cursor-pointer w-14 rounded-3xl  ${
                 bgColor === data.day ? "bg-green" : ""
               }`}

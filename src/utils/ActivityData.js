@@ -50,4 +50,18 @@ export const ActivityData = [
         status : "Success",
         date : "May 5, 2022"
     },
+    { 
+        id: 7,
+        Activity : "Payment Failed",
+        icon : Failed,
+        status : "Failed",
+        date : "May 5, 2022"
+    },
+    { 
+        id: 8,
+        Activity : "Payment Pending",
+        icon : Pending,
+        status : "Processing",
+        date : "May 5, 2022"
+    },
 ]
