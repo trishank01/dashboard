@@ -55,7 +55,14 @@ const SideBar = () => {
           <img className="bg-white p-2 rounded-xl" src={Logout} alt="Logout"/>
         </div>
       </div>
+      <div className="flex absolute top-[230px]  gap-4 items-center text-white">
+         developer  <a style={{textDecoration: "none"}}  href="https://trishank.me/" target="_blank" rel="noreferrer">
+
+          <span className="text-blue-300 border-0  border-solid border-b-2">Trishank</span>
+         </a>
       </div>
+      </div>
+   
     </div>
   );
 };

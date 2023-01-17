@@ -8,7 +8,7 @@ export const ActivityData = [
         Activity : "Payment Recieved",
         icon : Dollar,
         amount : 2000,
-        status : "Success",
+        status : "Failed",
         date : "May 5, 2022"
     },
     { 
@@ -59,6 +59,13 @@ export const ActivityData = [
     },
     { 
         id: 8,
+        Activity : "Payment Pending",
+        icon : Pending,
+        status : "Processing",
+        date : "May 5, 2022"
+    },
+    { 
+        id: 9,
         Activity : "Payment Pending",
         icon : Pending,
         status : "Processing",
